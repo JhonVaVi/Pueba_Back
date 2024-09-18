@@ -64,3 +64,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+acceso al postman:https://documenter.getpostman.com/view/38407934/2sAXqqej3M
+
+Un ejemplo de principios solidos es Open/Closed Principle (OCP)
+Las rutas deben ser extensibles sin necesidad de modificarse. Laravel nos proporciona rutas de controladores de recursos, que se pueden extender sin tocar las rutas existentes.
+Esto se aplico a productos y usuarios en la medida que se pudo
+
+Route::resource('productos', ProductoController::class);
+Route::Resource('users', UserController::class); 
